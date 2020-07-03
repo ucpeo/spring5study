@@ -1,4 +1,4 @@
-package com.ucpeo.bean.com.ucpeo;
+package com.ucpeo;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

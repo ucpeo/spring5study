@@ -11,11 +11,11 @@
         + spring-xmlAndAnnotation  `xml注解混合`
 
 #### xml
-![Image text](img/spring-xml.png)
+![Image text](../img/spring-xml.png)
 
 
 #### 注解版
-![Image text](img/spring-annotation.png)
+![Image text](../img/spring-annotation.png)
 
 #### 注解 & xml
-![Image text](img/spring-mix.png)
+![Image text](../img/spring-mix.png)

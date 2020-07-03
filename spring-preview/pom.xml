@@ -28,6 +28,7 @@
     </build>
     <modules>
         <module>spring-annotation</module>
+        <module>spring-xml</module>
     </modules>
 
     <dependencies>
