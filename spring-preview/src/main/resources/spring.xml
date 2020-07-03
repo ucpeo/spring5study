@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:utils="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <!--    构造方法创建-->
+    <bean id="str" class="java.lang.String">
+        <constructor-arg value="hello spring 5.2.7"/>
+    </bean>
+
+    <bean class="java.lang.String" id="username">
+        <constructor-arg value="tom"/>
+    </bean>
+
+    <bean class="java.lang.String" id="sex">
+        <constructor-arg value="男"/>
+    </bean>
+
+    <bean class="java.lang.Integer" id="age">
+        <constructor-arg value="30"/>
+    </bean>
+
+
+    <!--    setter -->
+    <bean class="com.ucpeo.bean.User" id="user">
+        <property name="username" value="ucpeo"/>
+        <property name="sex" value="男"/>
+        <property name="age" value="20"/>
+    </bean>
+
+
+    <!--  属性引用   -->
+    <bean class="com.ucpeo.bean.User" id="user1">
+        <property name="sex" ref="sex"/>
+        <property name="age" ref="age"/>
+        <property name="username" ref="username"/>
+    </bean>
+
+    <!--    根据构造方法 自动注入 -->
+    <bean class="java.lang.Integer" id="autowire" autowire="constructor"/>
+
+
+    <!--    List-->
+    <utils:list id="list">
+        <value>A</value>
+        <value>B</value>
+        <value>C</value>
+        <value>D</value>
+    </utils:list>
+
+    <!--    map-->
+    <utils:map id="map">
+      <entry key="1" value="apple"/>
+      <entry key="2" value="samsung"/>
+      <entry key="3" value="xiaomi"/>
+      <entry key="4" value="huawei"/>
+    </utils:map>
+
+
+
+
+</beans>
