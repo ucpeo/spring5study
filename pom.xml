@@ -12,6 +12,7 @@
         <module>spring-preview</module>
         <module>spring-aop-preview</module>
         <module>spring-dataSource</module>
+
     </modules>
     <properties>
         <spring.version>5.2.7.RELEASE</spring.version>
@@ -61,7 +62,7 @@
             <!--            aop-->
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>spring-tx</artifactId>
+                <artifactId>spring-aop</artifactId>
                 <version>${spring.version}</version>
             </dependency>
 
@@ -77,6 +78,13 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>1.9.5</version>
             </dependency>
 
 
