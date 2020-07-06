@@ -14,6 +14,7 @@ public class MyTest {
 
     @Test
     public void success() {
+        System.out.println(userTx.getClass());
         userTx.pass();
     }
 

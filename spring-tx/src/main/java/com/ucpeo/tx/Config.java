@@ -1,9 +1,6 @@
 package com.ucpeo.tx;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.*;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.TransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -16,6 +13,7 @@ import javax.sql.DataSource;
 @Import(com.ucpeo.jdbc.conf.Config.class)
 @ComponentScan("com.ucpeo")
 @EnableTransactionManagement
+@EnableAspectJAutoProxy
 public class Config {
     @Bean
     DataSourceTransactionManager transactionDataSource(DataSource dataSource) {
