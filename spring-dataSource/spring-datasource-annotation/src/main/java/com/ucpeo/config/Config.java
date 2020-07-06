@@ -8,14 +8,12 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
-
 @Configuration
 @ComponentScan("com.ucpeo")
 public class Config {
-
     @Bean
-  public   DataSource dataSource() throws SQLException {
-        DruidDataSource dataSource =new DruidDataSource();
+    public DataSource dataSource() throws SQLException {
+        DruidDataSource dataSource = new DruidDataSource();
         dataSource.setUsername("root");
         dataSource.setPassword("root");
         dataSource.setDriver(new Driver());
